@@ -4,6 +4,9 @@
     .projects {
         grid-template-columns: repeat(4, 1fr);
     }
+    .tech-mobile {
+        display: none;
+    }
 
 }
 
@@ -14,6 +17,11 @@
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .tech-mobile {
+        display: none;
+    }
+
     
 }
 
@@ -73,6 +81,8 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    
 }
 
 //Smartphones
@@ -82,8 +92,46 @@
         margin-top: 10vh;
     }
 
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'title'
+        'jo1'
+        'job2'
+        'title2'
+        'tech-mobile';
+
+        grid-template-columns: 1fr;
+    }
+
+    .tech-mobile {
+        grid-area: tech-mobile;
+    }
+
+    .technologies {
+        display: none;
+        
+    }
+
     .projects {
         grid-template-columns: 1fr;
+    }
+
+    .box{
+        width: 5rem;
+        height: 5rem;
+        margin: 0.5rem;
+        display: inline-block;
+        
+    
+        img.logo {
+            padding-top: 1rem;
+            width: 4rem;
+            height: 4rem;
+            
+        }
+    
     }
 
 }
