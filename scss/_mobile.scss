@@ -61,9 +61,11 @@
         grid-template-areas: 
         'bioimage'
         'bio'
+        'title'
         'jo1'
         'job2'
-        'job3';
+        'title2'
+        'technologies';
 
         grid-template-columns: 1fr;
     }
@@ -83,5 +85,5 @@
     .projects {
         grid-template-columns: 1fr;
     }
-    
+
 }

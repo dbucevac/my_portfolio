@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
     <title>About Me</title>
 </head>
 <body>
@@ -26,17 +29,17 @@
                 </li>
                 <li class="nav-item current">
                     <a href="about.html" class="nav-link">
-                        About me
+                        About Me
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="work.html" class="nav-link">
-                        My work
+                        My Work
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link">
-                        How to reach me
+                        Contact Me
                     </a>
                 </li>
             </ul>
@@ -44,34 +47,87 @@
     </header>
     <main id="about">
         <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
-        <h2 class="sm-heading">Let me tell you a few things</h2>
+        <h2 class="sm-heading">Few things about me</h2>
         <div class="about-info">
             <img src="img/darko.jpg" alt="Darko B" class="bio-image">
             <div class="bio">
                 <h3 class="text-secondary">BIO</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam hic officia atque recusandae eveniet soluta provident et quisquam quae, nisi deleniti facere beatae dicta numquam, doloribus perspiciatis debitis quaerat! Odit.</p>
+                <p>
+                    After graduating with master's degree in French language and literature, I started to work as a French speaking QA Analyst which led me to open a new chapter in my professional career in the IT field. Through this position, as well as through my personal involvement, I’ve gained the necessary experience in software testing and in other related aspects of quality assurance.<br>
+                    Once I’ve established a solid base in QA field, I began acquiring technical skills mainly via courses organized by FTN Informatika, which allowed me to learn a great deal about back-end development in Java, front-end development in React and working with databases. More detailed curriculum vitae can be consulted <a href="docs/Darko Bucevac CV ENG.pdf" target="_blank"><span>here</span></a>.
+                </p>
+            </div>
+            <div class="subsection-title">
+            <h3 class="text-secondary">Work Experience</h3>
             </div>
             <div class="job job-1">
-                <h3>Synechron</h3>
-                <h6>QA Analyst</h6>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ducimus quidem repellendus in voluptates nemo architecto quia eveniet voluptatem non.</p>
+                <h2>Synechron</h2>
+                <h4>QA Analyst</h4>
+                <p>
+                    - Translating and analyzing business requirements<br>
+                    - Planning and coordinating testing activities during development process<br>
+                    - Defining, creating and executing test cases (functional, regression, smoke, e2e, exploratory etc.)<br>
+                    - Writing automated tests in Java using Selenium WebDriver and TestNG framework<br>
+                    - Writing API automated tests using Postman<br>
+                    - Identifying, reporting and analyzing issues
+                </p>
             </div>
             <div class="job job-2">
-                <h3>Brightmarbles</h3>
-                <h6>QA Engineer</h6>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ducimus quidem repellendus in voluptates nemo architecto quia eveniet voluptatem non.</p>
+                <h2>Brightmarbles</h2>
+                <h4>QA Engineer</h4>
+                <p>
+                    - Participating in definition of business requirements<br>
+                    - Writing user stories based on existing requirements and UI designs<br>
+                    - Planning and coordinating testing activities during development process<br>
+                    - Defining, creating and executing test cases (functional, regression, smoke, e2e, exploratory etc.)<br>
+                    - Writing automated tests in JavaScript using Cypress<br>
+                    - Identifying, reporting and analyzing issues
+                </p>
             </div>
-            <div class="job job-3">
-                <h3>Mystery</h3>
-                <h6>Front End Developer</h6>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ducimus quidem repellendus in voluptates nemo architecto quia eveniet voluptatem non.</p>
+            <div class="subsection-title2">
+                <h3 class="text-secondary">Technologies</h3>
             </div>
-
+            <div class="technologies">
+                <ul id="responsive">
+                    <li class="item-a">
+                        <div class="box">
+                            <img src="img/technologies/node.png" class="logo">
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="box">
+                            <img src="img/technologies/node.png" class="logo">
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="box">
+                            <img src="img/technologies/node.png" class="logo">
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="box">
+                            <img src="img/technologies/node.png" class="logo">
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="box">
+                            <img src="img/technologies/node.png" class="logo">
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="box">
+                            <img src="img/technologies/node.png" class="logo">
+                        </div>
+                    </li>     
+                </ul>
+                
+            </div>
         </div>
     </main>
     <footer id="main-footer">
         Copyright &copy; 2020
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>

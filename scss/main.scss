@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'slider';
 
 
 * {
@@ -31,6 +32,7 @@ h1,h2,h3 {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color, 2), 0.5);
+        display: inline-block;
     }
 }
 
@@ -76,10 +78,16 @@ main {
 .about-info {
     display: grid;
     grid-gap: 30px;
+    
     grid-template-areas: 
-    'bioimage bio bio'
-    'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
+    'bioimage bio'
+    'title title'
+    'job1 job2'
+    'title2 title2'
+    'technologies technologies';
+
+    
+    grid-template-columns: repeat(2, 1fr);
 
     .bio-image {
         grid-area: bioimage;
@@ -90,7 +98,27 @@ main {
     
     .bio {
         grid-area: bio;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        text-align: justify;
+
+        span {
+            color: $secondary-color;
+            font-weight: bold;
+        }
+    }
+    .subsection-title {
+        grid-area: title;
+        margin: auto;
+        font-size: 1.4rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .subsection-title2 {
+        grid-area: title2;
+        margin: auto;
+        font-size: 1.4rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
     
     .job1 {
@@ -101,14 +129,20 @@ main {
         grid-area: job2;
     }
     
-    .job3 {
-        grid-area: job3;
+    .job {
+        font-size: 1.1rem;
+        background: lighten($primary-color, 5);
+        border-radius: 8px;
+        width: 85%;
+        padding: 1.5rem;
+        border-bottom: $secondary-color 5px solid;
+        margin: auto;
     }
     
-    .job {
-        background: lighten($primary-color, 5);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+    .technologies {
+        grid-area: technologies;
+        margin: auto;
+        width: 50%;
     }
 }
 
