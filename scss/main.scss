@@ -166,6 +166,47 @@ main {
     }
 }
 
+//Contact 
+
+.contact-info {
+    display: grid;
+    grid-gap: 30px;
+    
+    grid-template-areas: 
+    'map my-info';
+
+    
+    grid-template-columns: repeat(2, 1fr);
+
+    .map {
+        grid-area: map;
+        margin: auto;
+        filter: grayscale(100%);
+    }
+    
+    .my-info {
+        grid-area: my-info;
+        font-size: 1.4rem;
+        text-align: justify;
+        margin: auto;
+
+        .info-text{
+            vertical-align: middle;
+        }
+
+        .info-icon {
+            width: 2rem;
+            height: 2rem;
+            margin: 0.5rem;
+            vertical-align: middle;
+            color: $secondary-color;
+        }
+
+
+    }
+
+}
+
 //Button styles
 
 .btn {
