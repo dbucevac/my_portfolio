@@ -153,6 +153,29 @@ main {
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
 
+    .container {
+        position: relative;
+
+        .middle {
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        &:hover .middle {
+            opacity: 1;
+
+        }
+
+        .text {
+            background-color: $secondary-color;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+          }
+    }
 
     img {
         width: 100%;
@@ -165,6 +188,7 @@ main {
         }
     }
 }
+
 
 //Contact 
 
